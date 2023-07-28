@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KG. SRI GUNUNG PULAI</title>
+</head>
+
+    <body style="background-image: url(white.jpg);"></body>
+
+<head>
+    <style>
+        * {box-sizing: content-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 10px;
+          width: 10px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+        </style>
+        </head>
+        <body>
+        
+        
+          <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="kuning.jpg" alt="kuning" style="width:100%" height="250px">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="keris.jpg" alt="keris" style="width:100%" height="250px">
+             
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="gunung.jpg" alt="gunung" style="width:100%" height="250px">
+           
+            </div>
+    
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="rumah.jpg" alt="rumah"  style="width:100%" height="250px">
+           
+            </div>
+    
+            </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    </div>
+</body>
+
+  <body>
+    <style>
+
+        .dropbtn {
+          background-color: #04AA6D;
+          position: relative;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        </style>
+        </head>
+
+    <body><a href="about.html" style="background-color:white ;"></a></body>
+
+    <center><div class="dropdown">
+      <button class="dropbtn"><b>Home</b></button>
+      <div class="dropdown-content">
+        <a href="homepage.html">Homepage</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn"><b>About</b></button>
+      <div class="dropdown-content">
+        <a href="About.html">About Us</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn"><b>Organizational</b></button>
+      <div class="dropdown-content">
+        <a href="chart.html">Chart</a>
+      </div>
+    </div>
+
+      <div class="dropdown">
+        <button class="dropbtn"><b>Community</b></button>
+        <div class="dropdown-content">
+          <a href="community.html">Local community</a>
+          <a href="activity.html">Activity</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+          <button class="dropbtn"><b>Facility</b></button>
+          <div class="dropdown-content">
+            <a href="religion.html">Religion</a>
+            <a href="education.html">Education</a>
+            <a href="accommodation.html">Accommodation</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn"><b>Things To Do</b></button>
+        <div class="dropdown-content">
+          <a href="adventure.html">Adventure</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn"><b>Unique</b></button>
+        <div class="dropdown-content">
+          <a href="unique.html">More</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+          <button class="dropbtn"><b>Gallery</b></button>
+          <div class="dropdown-content">
+            <a href="gallery.html">Kampung Sri Gunung Pulai</a>
+          </div>
+      </div></center>
+     
+
+     <style> 
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+          text-align: justify;
+        }
+      /* Create two columns/boxes that floats next to each other */
+nav {
+float: right;
+width: 20%;
+height: 1300px; /* only for demonstration, should be removed */
+background: #ccc;
+padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+article {
+float: left;
+padding: 25px;
+width: 80%;
+background-color: #d1d9dd;
+height: 1300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the footer */
+footer {
+background-color: #777;
+padding: 9px;
+text-align: center;
+color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+nav, article {
+  width: 100%;
+  height: auto;
+}
+}
+</style>
+</head>
+<body>
+
+
+<header>
+<center><h2>Activity</h2></center>
+</header>
+
+<section>
+<nav>
+  <td valign="top" text-align="center">
+
+    <center><h1 style="font-family:Georgia, 'Times New Roman', Times, serif; color:rgb(11, 11, 12);"><big>Reference</big></h1>
+
+      <br>
+      <a href="https://api.whatsapp.com/send?phone=60108207596"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" width="60px" title="WhatsApp"/></a>
+      <br>
+      <br>
+      <a href="https://www.instagram.com/sekawankoop/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/640px-Instagram-Icon.png" width="60px" title="Instagram"/></a>
+      <br>
+      <br>
+      <a href="https://www.facebook.com/groups/3153097371602989/"><img src="https://seeklogo.com//images/F/facebook-logo-966BBFBC34-seeklogo.com.png" width="60px" title="Facebook"/></a>
+      <br>
+    </center>
+    </td>
+</nav>
+
+
+<article>
+<ul>
+  <li><h1> Kompang Club</h1></li>
+  <p> Kampung Sri Gunung Pulai has established a kompang club association and has followed the competition for the district level. 
+    Most of the kompang members range from elementary school students to adults. 
+    This kompang instrument is always played on the arrival of Japanese tourists and wedding feasts.</p>
+
+    <center><img src="kompang.jpg" alt="kompang" hspace=10 vspace=10 style="width:30%"></center>
+
+<br>
+
+<hr noshade width= "100%"/> 
+
+  <li><h1> Gotong-royong</h1></li>
+  <p> Gotong-royong is an important activity for all places in the city as well as in the village. 
+    This is to ensure the health of the local population and the village in good condition. Kampung Sri Gunung Pulai has made this activity a mandatory activity for the villagers to join together to help clean the village area.
+     This activity is usually held every 2 months.</p>
+
+     <center><img src="gotong.jpg" alt="gotong" width="230" height="200" hspace=10 vspace=40>
+     <img src="gotong2.jpg" alt="gotong2" width="230" height="200" hspace=10 vspace=40></center>
+<br>
+
+<hr noshade width= "100%"/> 
+
+  <li><h1> Marhaban</h1></li>
+  <p> Marhaban is one of the cultures that is still preserved by the residents of Kampung Sri Gunung Pulai.
+     This Marhaban is usually done in the month of Syawal. 
+     This marhaban is done with the aim of visiting and courting the villagers as well as being able to strengthen bonds of friendship.</p>
+
+     <center><img src="marhaban.jpg" alt="marhaban" width="230" height="200" hspace=10 vspace=40>
+      <img src="marhaban2.jpg" alt="marhaban2" width="230" height="200" hspace=10 vspace=40></center>
+
+</ul>
+</article>
+</section>
+
+<footer>
+  <p style="text-align:center; font-size:10px;">Copyright 2023& Nor Ain Solihah binti Osman Recommended browser: Google Chrome. Resolution 1108 x 1228. Last update: 29<sup>th</sup> JULY 2023. <br>This site for assignment purpose only.</p>
+</footer>
+  
+           
+    </body>
+</html> 
